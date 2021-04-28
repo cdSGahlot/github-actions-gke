@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="0.044">
+    <testcase classname="Registration" name="Registration is successful" time="0.003">
+        <system-out>
+            <![CDATA[Given I visit /register endpoint............................................passed
+When I enter userdetails....................................................passed
+Then I get "Successfully registered"........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Registration" name="Registration is unsuccessful" time="0.002">
+        <system-out>
+            <![CDATA[Given I visit /register endpoint............................................passed
+When I enter userdetails with existing PAN "BYAKY6650L".....................passed
+Then I get "ERROR: user with entered PAN BYAKY6650L already exists".........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Registration" name="Registration is unsuccessful 2" time="0.005">
+        <system-out>
+            <![CDATA[Given I visit /register endpoint............................................passed
+When I enter userdetails with existing Bank Id 551..........................passed
+Then I get "ERROR: user with Bank id 551 already exists"....................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

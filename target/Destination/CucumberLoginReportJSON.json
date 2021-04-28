@@ -1,0 +1,199 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-28T03:59:33.135Z",
+        "line": 4,
+        "name": "Login is successful",
+        "description": "",
+        "id": "login;login-is-successful",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 61008000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I visit /login endpoint",
+            "match": {
+              "location": "com.cognizant.BankManagementSystem.ServiceTest.serviceTest.i_visit_login_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter userid 101 and password \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "101",
+                  "offset": 15
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 32
+                }
+              ],
+              "location": "com.cognizant.BankManagementSystem.ServiceTest.serviceTest.i_enter_userid_and_password(java.lang.Integer,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 995100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should get \"Logged in successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Logged in successfully\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.cognizant.BankManagementSystem.ServiceTest.serviceTest.i_should_get(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-28T03:59:33.288Z",
+        "line": 9,
+        "name": "Login is unsuccessful because incorrect password",
+        "description": "",
+        "id": "login;login-is-unsuccessful-because-incorrect-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 999400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I visit /login endpoint",
+            "match": {
+              "location": "com.cognizant.BankManagementSystem.ServiceTest.serviceTest.i_visit_login_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I enter userid 101 and password \"abcxyz\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "101",
+                  "offset": 15
+                },
+                {
+                  "val": "\"abcxyz\"",
+                  "offset": 32
+                }
+              ],
+              "location": "com.cognizant.BankManagementSystem.ServiceTest.serviceTest.i_enter_userid_and_password(java.lang.Integer,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 999300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should get \"ERROR: Incorrect Password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ERROR: Incorrect Password\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.cognizant.BankManagementSystem.ServiceTest.serviceTest.i_should_get(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-28T03:59:33.300Z",
+        "line": 14,
+        "name": "Login is unsuccessful because user not found",
+        "description": "",
+        "id": "login;login-is-unsuccessful-because-user-not-found",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I visit /login endpoint",
+            "match": {
+              "location": "com.cognizant.BankManagementSystem.ServiceTest.serviceTest.i_visit_login_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 999800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I enter userid 121 and password \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "121",
+                  "offset": 15
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 32
+                }
+              ],
+              "location": "com.cognizant.BankManagementSystem.ServiceTest.serviceTest.i_enter_userid_and_password(java.lang.Integer,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should get \"ERROR: Not found user with Bank id 121\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ERROR: Not found user with Bank id 121\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.cognizant.BankManagementSystem.ServiceTest.serviceTest.i_should_get(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:Login.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="0.376">
+    <testcase classname="Login" name="Login is successful" time="0.135">
+        <system-out>
+            <![CDATA[Given I visit /login endpoint...............................................passed
+When I enter userid 101 and password "password".............................passed
+Then I should get "Logged in successfully"..................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login" name="Login is unsuccessful because incorrect password" time="0.001">
+        <system-out>
+            <![CDATA[Given I visit /login endpoint...............................................passed
+When I enter userid 101 and password "abcxyz"...............................passed
+Then I should get "ERROR: Incorrect Password"...............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login" name="Login is unsuccessful because user not found" time="0.004">
+        <system-out>
+            <![CDATA[Given I visit /login endpoint...............................................passed
+When I enter userid 121 and password "password".............................passed
+Then I should get "ERROR: Not found user with Bank id 121"..................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
