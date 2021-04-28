@@ -84,6 +84,11 @@
             <artifactId>spring-cloud-gcp-starter-data-datastore</artifactId>
             <version>1.2.8.RELEASE</version>
         </dependency>
+        <dependency>
+        	<groupId>org.springframework.cloud</groupId>
+        	<artifactId>spring-cloud-gcp-starter</artifactId>
+        	<version>1.2.8.RELEASE</version>
+        </dependency>
 		<dependency>
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-surefire-plugin</artifactId>
@@ -118,6 +123,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>registration-login-update-service</finalName>
 	</build>
 
 </project>

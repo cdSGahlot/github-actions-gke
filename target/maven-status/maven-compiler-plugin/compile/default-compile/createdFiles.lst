@@ -1,0 +1,5 @@
+com\cognizant\BankManagementSystem\model\LoginData.class
+com\cognizant\BankManagementSystem\model\UserData.class
+com\cognizant\BankManagementSystem\repository\GCPUsersRepository.class
+com\cognizant\BankManagementSystem\Service\RegisterService.class
+com\cognizant\BankManagementSystem\controller\RegisterController.class

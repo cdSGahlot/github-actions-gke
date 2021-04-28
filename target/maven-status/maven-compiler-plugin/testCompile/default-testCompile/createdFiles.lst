@@ -1,0 +1,4 @@
+com\cognizant\BankManagementSystem\TestRunnerRegisteration.class
+com\cognizant\BankManagementSystem\TestRunnerLogin.class
+com\cognizant\BankManagementSystem\RegistrationLoginServiceApplicationTests.class
+com\cognizant\BankManagementSystem\ServiceTest\serviceTest.class
