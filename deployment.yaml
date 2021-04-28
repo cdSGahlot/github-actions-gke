@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: RegistrationLoginService
+  name: github-actions-gke
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: RegistrationLoginService
+      app: github-actions-gke
   template:
     metadata:
       labels:
-        app: RegistrationLoginService
+        app: github-actions-gke
     spec:
       containers:
         - name: app
